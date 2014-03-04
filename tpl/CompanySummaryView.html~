@@ -1,0 +1,49 @@
+<h3><%= Name %></h3>
+<h4><%= WebsiteUrl %></h4>
+<br>
+        <table class="table table-striped">
+            <%
+            if (WebsiteUrl == 'TESTING!')
+            {
+            %>
+            <tr>
+                <td>Manager:</td>
+                <td><i class="icon-user"></i> <a href='#employees/<%= WebsiteUrl %>'><%= WebsiteUrl %></a></td>
+            </tr>
+            <%
+            }
+            %>
+            <tr>
+                <td>Office Phone:</td>
+                <td><i class="icon-home"></i> <%= Phone %></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><i class="icon-envelope"></i> <a href="mailto:<%= Email %>"><%= Email %></a></td>
+            </tr>
+            <tr>
+                <td>Address 1:</td>
+                <td><%= Address1 %></td>
+            </tr>
+            <tr>
+                <td>Address 2:</td>
+                <td><%= Address2 %></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td><%= City %></td>
+            </tr>
+            <tr>
+                <td>Zip:</td>
+                <td><%= ZipCode %></td>
+            </tr>
+            <tr>
+                <td>State:</td>
+                <td><%= State %></td>
+            </tr>
+        </table>
+
+        <div class="alert alert-warning">
+          <h4 class="alert-heading">Warning</h4>
+          The phone numbers, email addresses, and Twitter handlers are fake.
+        </div>
