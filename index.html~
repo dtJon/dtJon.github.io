@@ -19,28 +19,6 @@
 
 <body>
 <div id="fb-root"></div>
-<script>
-debugger;
-//    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
-window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '626309890775460', // Facebook App ID
-    status     : true, // check login status
-    cookie     : true, // enable cookies to allow Parse to access the session
-    xfbml      : true  // parse XFBML
-  });
- alert("Initialized!");
-  // Additional initialization code here
-};
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/all.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-</script>
-
 <div class="container">
     <div class="row-fluid">
         <div id="content" class="span12>"></div>
@@ -75,5 +53,26 @@ window.fbAsyncInit = function() {
 <!-- Uncomment the two scripts below to use Parse.com as the data persistence layer. -->
 <script src="lib/parse-1.2.2.min.js"></script>
 <script src="js/models/model-parse-com.js"></script>
+<script>
+debugger;
+//    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '626309890775460', // Facebook App ID
+    status     : true, // check login status
+    cookie     : true, // enable cookies to allow Parse to access the session
+    xfbml      : true  // parse XFBML
+  });
+ alert("Initialized!");
+  // Additional initialization code here
+};
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+</script>
 </body>
 </html>

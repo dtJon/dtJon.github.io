@@ -29,6 +29,7 @@ directory.Router = Backbone.Router.extend({
         "contact":          "contact",
         "employees/:id":    "employeeDetails",
 	"companies/:id":    "companyDetails",
+	"companies" : "companies",
     },
 
     initialize: function () {
@@ -41,6 +42,22 @@ directory.Router = Backbone.Router.extend({
         this.$content = $("#content");
     },
 
+    companies : function() {
+debugger;
+	var self = this;
+	var companies = new directory.CompanyCollection();
+	companies.fetch({ success: function(data) { 
+		if(!directory.companyListView){
+			directory.companyListView = new directory.CompanyListView({model:data});
+			directory.companyListView.render();
+		} else {
+			console.log("reusing home view");
+			directory.companyListView.delegateEvents();
+		}
+$("#content").html(directory.companyListView.el);
+directory.shellView.selectMenuItem('companies-menu');
+	} });
+    },
     home: function () {
         // Since the home view never changes, we instantiate it and render it only once
         if (!directory.homelView) {
@@ -78,7 +95,6 @@ directory.Router = Backbone.Router.extend({
     },
 
 	companyDetails : function(id) {
-debugger;
 		var company = new directory.Company({id: id});
 		var self = this;
 		company.fetch({
@@ -93,9 +109,10 @@ debugger;
 });
 
 $(document).on("ready", function () {
-    directory.loadTemplates(["HomeView", "ContactView", "ShellView", "EmployeeView", "EmployeeSummaryView", "EmployeeListItemView", "CompanyListItemView", "CompanyView", "CompanySummaryView"],
+    directory.loadTemplates(["HomeView", "ContactView", "ShellView", "EmployeeView", "EmployeeSummaryView", "EmployeeListItemView", "CompanyListItemView", "CompanyView", "CompanySummaryView", "CompanyListView"],
         function () {
             directory.router = new directory.Router();
             Backbone.history.start();
         });
 });
+

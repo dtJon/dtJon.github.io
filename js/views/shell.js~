@@ -13,7 +13,24 @@ directory.ShellView = Backbone.View.extend({
 
     events: {
         "keyup .search-query": "search",
-        "keypress .search-query": "onkeypress"
+        "keypress .search-query": "onkeypress",
+	"click #login": "login",
+    },
+
+    login : function(event) {
+debugger;
+	  Parse.FacebookUtils.logIn(null, {
+	  success: function(user) {
+	    if (!user.existed()) {
+	      alert("User signed up and logged in through Facebook!");
+	    } else {
+	      alert("User logged in through Facebook!");
+	    }
+	  },
+	  error: function(user, error) {
+	    alert("User cancelled the Facebook login or did not fully authorize.");
+	  }
+	});
     },
 
     search: function (event) {
