@@ -1,78 +1,390 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>Employee Directory</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <title>Lindyne | Jon Lind</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="assets/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <!-- owl carousel css -->
+    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+  </head>
 
-    <script src="http://use.edgefonts.net/source-sans-pro.js"></script>
+  <body>
 
-</head>
+    <div class="background-image-overlay"></div>
 
-<body>
-<div id="fb-root"></div>
-<div class="container">
-    <div class="row-fluid">
-        <div id="content" class="span12>"></div>
-    </div>
-</div>
+    <div id="outer-background-container" data-default-background-img="assets/images/other_images/bg5.jpg" style="background-image:url(assets/images/other_images/bg5.jpg);"></div>
+    <!-- end: #outer-background-container -->    
 
-<script src="lib/jquery-1.9.1.min.js"></script>
-<script src="lib/underscore-min.js"></script>
-<script src="lib/backbone-min.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
+    <!-- Outer Container -->
+    <div id="outer-container">
 
-<script src="js/app.js"></script>
-<script src="js/views/shell.js"></script>
-<script src="js/views/home.js"></script>
-<script src="js/views/contact.js"></script>
-<script src="js/views/employeelist.js"></script>
-<script src="js/views/employeedetails.js"></script>
-<script src="js/views/companylist.js"></script>
-<script src="js/views/companydetails.js"></script>
+      <!-- Left Sidebar -->
+      <section id="left-sidebar">
+        
+        <div class="logo">
+          <a href="#intro" class="link-scroll"><img src="assets/images/other_images/logo.png" alt="Twilli Air"></a>
+        </div><!-- .logo -->
 
-<!-- SELECT ONE (AND ONLY ONE) OF THE DATA PERSISTENCE SOLUTIONS BELOW -->
+        <!-- Menu Icon for smaller viewports -->
+        <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
 
-<!-- Uncomment the script below to access the application data using an in-memory data store -->
-<!--<script src="js/models/model-in-memory.js"></script>-->
+        <ul id="main-menu">
+          <li id="menu-item-text" class="menu-item scroll"><a href="#text">Who I Am</a></li>
+          <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Skills</a></li>
+<!--          <li id="menu-item-carousel" class="menu-item scroll"><a href="#portfolio">Portfolio</a></li>-->
+          <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Portfolio</a></li>
+          <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
+        </ul><!-- #main-menu -->
 
-<!-- Uncomment the script below to access the application data using RESTful services. Open model-rest.js and adjust the URL attributes to reflect your URL endpoints. -->
-<!--<script src="js/models/model-rest.js"></script>-->
+      </section><!-- #left-sidebar -->
+      <!-- end: Left Sidebar -->
 
-<!-- Uncomment the script below to access the application data using RESTful services with JSONP. Open model-rest.js and adjust the URL attributes to reflect your REST endpoints. -->
-<!--<script src="js/models/model-rest-jsonp.js"></script>-->
+      <section id="main-content" class="clearfix">
+        
+        <article id="intro" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg5.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
 
-<!-- Uncomment the two scripts below to use Parse.com as the data persistence layer. -->
-<script src="lib/parse-1.2.2.min.js"></script>
-<script src="js/models/model-parse-com.js"></script>
-<script>
-debugger;
-//    channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
-window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '626309890775460', // Facebook App ID
-    status     : true, // check login status
-    cookie     : true, // enable cookies to allow Parse to access the session
-    xfbml      : true  // parse XFBML
-  });
- alert("Initialized!");
-  // Additional initialization code here
-};
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/all.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-</script>
-</body>
+                <section class="feature-text">
+                  <h1>Jon Lind : The Internet Since 1996</h1>
+<p>With years of experience in building reliable, high performance web and mobile solutions, Jon has brought his passion for technology and experience in data and software architecture to help companies deliver high quality internet solutions.</p>
+
+               <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">find out more</a></p>
+                </section>
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="text" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg1.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-10 col-md-9 pull-right">
+
+                <h1 class="section-title">Who I Am</h1>
+
+                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/transp-image5b.png" class="lazy pull-right" alt="Jon Lind: Who I Am">
+
+<h4>Philosophy</h4>
+	<p>An innate desire to say "yes".  An almost obsession with performance and efficiency and trying to achieve maximum productivity.  </p>
+	<p>Honesty, openness, transparency and authenticity.  Let's embrace opportunities and challenges openly and head-on.  And you'll never hear an excuse from me.</p>
+	<p>A real commitment and pride in the quality of my work, and an ability to learn from those around me to constantly improve while mentoring and pushing the team to do the same.</p>
+	<p>The ability to build strong relationships with all of the disciplines that go into a successful project, from product owners, designers, architects and engineers to quality assurance and project management.</p>
+
+<h4>Experience</h4>
+Helping to start-up a small Internet Service Provider in the mid-90s he quickly transitioned to building websites, databases, secure e-commerce solutions, mobile apps and designing and building the infrastructure to support it all.  He has worked with <a href="#portfolio">some of the highest traffic sites on the web</a>, keenly understanding the importance of designing a solution that is reliable, can scale, and is flexible enough to grow and change to support the organization for years to come. 
+</p>
+<h4>Passion</h4>
+<p>Having developed software since he was twelve years old it is a life-long passion and he has had the great fortune to be able to devote his career to learning and mentoring the technology of the web.  Bringing this experience to people and organizations to avoid the mistakes of the past and come up with the best solutions for the future is deeply satisfying.  
+</p>
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="grid" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-11 col-md-10 pull-right">
+
+                <h1 class="section-title">Grid</h1>
+                
+                <!-- grid -->
+                <section class="grid row clearfix clearfix-for-2cols">
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-stats"></span>
+                      <div class="text-content">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p>Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-record"></span>
+                      <div class="text-content">
+                        <h5>Aliquam adipiscing eros non elit</h5>
+                        <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-lock"></span>
+                      <div class="text-content">
+                        <h5>Integer ultricies sed ligula</h5>
+                        <p>Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula ligula eget.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                  <!-- grid item -->
+                  <div class="grid-item col-md-6">
+                    <div class="item-content clearfix">
+                      <span class="icon glyphicon glyphicon-file"></span>
+                      <div class="text-content">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
+                      </div>
+                    </div><!-- end: .item-content -->
+                  </div><!-- end: .grid-item -->
+
+                </section><!-- end: grid -->
+
+            </div><!-- .col-sm-11 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg3.jpg">
+          <div class="content-wrapper clearfix">
+            <div class="col-sm-11 pull-right">
+
+                <h1 class="section-title">Portfolio</h1>
+              
+                <!-- feature columns -->
+                <section class="feature-columns row clearfix">
+
+                  <!-- feature 1 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-6');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/other_images/hg1.png" class="lazy item-thumbnail" alt="Healthgrades 2.0">
+                      </div>
+                      <div class="caption">
+                        <h5>Healthgrades 2.0</h5>
+                        <p>One of the top healthcare sites</p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-6">
+                      <h1>Healthgrades 2.0</h1>
+                      <p>Ground-up redesign of Healthgrades' flagship website, providing a clean design and high performance.<br/></p>
+
+                      <!-- image slider inside popup -->
+                      <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
+                        <!-- slide -->
+                        <div>
+                          <!-- caption is optional. To remove it, remove the <h6> below -->
+                          <h6 class="caption">Fresh, clean design.</h6>
+                          <img class="lazyOwl" data-src="assets/images/other_images/hg1.png">
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption">Search millions of doctors and facilities in less than a second.</h6>
+                          <img class="lazyOwl" data-src="assets/images/other_images/hg3.png">
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption">Secure login and account management; responsive design for desktop and mobile</h6>
+                          <img class="lazyOwl" data-src="assets/images/other_images/hg2.png">
+                        </div>
+                        <!-- slide -->
+                        <div>
+                          <h6 class="caption">Fast, mobile optimized site</h6>
+                          <img class="lazyOwl" data-src="assets/images/other_images/hg4.png">
+                        </div>
+                      </div>
+                    </div><!-- #modal-content-6 -->
+                  </article>
+
+                  <!-- feature 2 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-7');" class="thumbnail linked">
+                      <div class="image-container">
+                        <x-img data-img-src="assets/images/other_images/project-2.jpg" class="lazy item-thumbnail" alt="Lorem Ipsum">
+                      </div>
+                      <div class="caption">
+                        <h5>CIGNA</h5>
+                        <p>
+Health Insurance Benefits and Enrollment
+</p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-7">
+                      <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
+                      <h1>Benefits Enrollment</h1>
+                      <p>Worked for Great-West Health, later CIGNA, on two critical projects.  Under an extremely tight deadline completed a 
+benefits enrollment application used by hundreds of thousands of customers by the completion of enrollment season.  </p>
+                    </div><!-- #modal-content-7 -->
+                  </article>
+
+                  <!-- feature 3 -->
+                  <article class="feature-col col-md-4">
+                    <a href="" onclick="populate_and_open_modal(event, 'modal-content-8');" class="thumbnail linked">
+                      <div class="image-container">
+                        <img data-img-src="assets/images/other_images/gd1.png" class="lazy item-thumbnail" alt="Go Daddy">
+                      </div>
+                      <div class="caption">
+                        <h5>Go Daddy</h5>
+                        <p>
+Customer facing sales site with millions of page views per day.
+</p>
+                      </div><!-- .caption -->
+                    </a><!-- .thumbnail -->
+
+                    <div class="content-to-populate-in-modal" id="modal-content-8">
+                      <img data-img-src="assets/images/other_images/gd1.png" class="lazy full-width" alt="Go Daddy Ajax">
+                      <h1>Fast, Dynamic AJAX</h1>
+                      <p>Instrumental in designing and implementing the company's new AJAX, jQuery and JSON based framework to enable fast and dynamic loading of content on the company's main domain purchase site. The sight is extremely high traffic with millions of page views per day.
+</p>
+                      <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
+                      <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
+                    </div><!-- #modal-content-8 -->
+
+                  </article>
+
+                </section><!-- end: .feature-columns -->
+
+              <!-- End: Section content to edit -->
+
+            </div><!-- .col-sm-10 -->
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+        <article id="contact" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg4.jpg">
+          <div class="content-wrapper clearfix">
+            
+              <h1 class="section-title">Contact</h1>
+              
+                <!-- CONTACT DETAILS -->
+                <div class="contact-details col-sm-5 col-md-3">
+                  <p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>
+                  <p>Tel: (+20) 21 301 524</p>
+                  <p><a href="mailto:info@loremipsum.com">info@loremipsum.com</a></p>
+                </div>
+                <!-- END: CONTACT DETAILS -->
+
+                <!-- CONTACT FORM -->
+                <div class="col-sm-7 col-md-9">
+                  <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
+                  <form class="form-style validate-form clearfix" action="assets/php/mail.php" method="POST" role="form">
+
+                    <!-- form left col -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="text-field form-control validate-field required" data-validation-type="string" id="form-name" placeholder="Full Name" name="name">
+                      </div>  
+                      <div class="form-group">
+                        <input type="email" class="text-field form-control validate-field required" data-validation-type="email" id="form-email" placeholder="Email Address" name="email">
+                      </div>
+                      <div class="form-group">
+                        <input type="tel" class="text-field form-control validate-field phone" data-validation-type="phone" id="form-contact-number" placeholder="Contact Number" name="contact_number">
+                      </div>                 
+                    </div><!-- end: form left col -->
+
+                    <!-- form right col -->
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <textarea placeholder="Message..." class="form-control validate-field required" name="message"></textarea>
+                      </div> 
+                      <div class="form-group">
+                        <img src="assets/images/theme_images/loader-form.GIF" class="form-loader">
+                        <button type="submit" class="btn btn-sm btn-outline-inverse">Submit</button>
+                      </div> 
+                      <div class="form-group form-general-error-container"></div>           
+                    </div><!-- end: form right col -->
+
+                  </form>
+                </div><!-- end: CONTACT FORM -->
+
+          </div><!-- .content-wrapper -->
+        </article><!-- .section-wrapper -->
+
+      </section><!-- #main-content -->
+
+      <!-- Footer -->
+      <section id="footer">
+
+        <!-- Go to Top -->
+        <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
+
+        <ul class="social-icons">
+          <li><a href="#" target="_blank" title="Facebook"><img src="assets/images/theme_images/social_icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#" target="_blank" title="Twitter"><img src="assets/images/theme_images/social_icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#" target="_blank" title="Google+"><img src="assets/images/theme_images/social_icons/googleplus.png" alt="Google+"></a></li>
+        </ul>
+
+        <!-- copyright text -->
+        <div class="footer-text-line">&copy; 2014 Twilli | Air</div>
+      </section>
+      <!-- end: Footer -->      
+
+    </div><!-- #outer-container -->
+    <!-- end: Outer Container -->
+
+    <!-- Modal -->
+    <!-- DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it -->
+    <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div class="modal-body">
+          </div><!-- .modal-body -->
+        </div><!-- .modal-content -->
+      </div><!-- .modal-dialog -->
+    </div><!-- .modal -->    
+
+    <!-- Javascripts
+    ================================================== -->
+
+    <!-- Jquery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Easing - for transitions and effects -->
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+
+    <!-- background image strech script -->
+    <script src="assets/js/jquery.backstretch.min.js"></script>
+    <!-- background image fix for IE 9 or less
+       - use same background as set above to <body> -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      jQuery("#outer-background-container").backstretch("assets/images/other_images/bg5.jpg");
+    });
+    </script> 
+    <![endif]-->  
+
+    <!-- detect mobile browsers -->
+    <script src="assets/js/detectmobilebrowser.js"></script>
+
+    <!-- owl carousel js -->
+    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!-- Custom functions for this theme -->
+    <script src="assets/js/functions.min.js"></script>
+    <script src="assets/js/initialise-functions.js"></script>
+
+    <!-- IE9 form fields placeholder fix -->
+    <!--[if lt IE 9]>
+    <script>contact_form_IE9_placeholder_fix();</script>
+    <![endif]-->  
+
+  </body>
 </html>
