@@ -50,7 +50,7 @@
 
         <ul id="main-menu">
           <li id="menu-item-text" class="menu-item scroll"><a href="#text">Who I Am</a></li>
-          <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Skills</a></li>
+          <li id="menu-item-grid" class="menu-item scroll"><a href="#skills">Skills</a></li>
 <!--          <li id="menu-item-carousel" class="menu-item scroll"><a href="#portfolio">Portfolio</a></li>-->
           <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Portfolio</a></li>
           <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Contact</a></li>
@@ -100,7 +100,7 @@ Helping to start-up a small Internet Service Provider in the mid-90s he quickly 
           </div><!-- .content-wrapper -->
         </article><!-- .section-wrapper -->
 
-        <article id="grid" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
+        <article id="skills" class="section-wrapper clearfix" data-custom-background-img="assets/images/other_images/bg2.jpg">
           <div class="content-wrapper clearfix">
             <div class="col-sm-11 col-md-10 pull-right">
 
@@ -112,10 +112,14 @@ Helping to start-up a small Internet Service Provider in the mid-90s he quickly 
                   <!-- grid item -->
                   <div class="grid-item col-md-6">
                     <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-stats"></span>
+                      <span class="icon glyphicon glyphicon-globe"></span>
                       <div class="text-content">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.</p>
+                        <h5>Web</h5>
+<p>
+I have focused on the web for almost all of my career.  Starting with servers running on my kitchen table I have continually improved my knowledge and
+experience with how to rapidly build high performance websites.  Since then I've worked on sites with a billion requests per day and can bring my insight to
+helping your team be successful.
+</p>
                       </div>
                     </div><!-- end: .item-content -->
                   </div><!-- end: .grid-item -->
@@ -123,10 +127,14 @@ Helping to start-up a small Internet Service Provider in the mid-90s he quickly 
                   <!-- grid item -->
                   <div class="grid-item col-md-6">
                     <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-record"></span>
+                      <span class="icon glyphicon glyphicon-phone"></span>
                       <div class="text-content">
-                        <h5>Aliquam adipiscing eros non elit</h5>
-                        <p>Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
+                        <h5>Mobile</h5>
+<p>
+I have been interested in mobile from the early days. The power of communication and the potential of the devices in each of our pockets has been truly
+transformational. The integration of mobile applications, the mobile web and users from their desktops offers massive potential, but significant challenges. 
+Having navigated those challenges for companies such as Healthgrades I can guide you through building the best solution from the ground up.
+</p>
                       </div>
                     </div><!-- end: .item-content -->
                   </div><!-- end: .grid-item -->
@@ -134,10 +142,14 @@ Helping to start-up a small Internet Service Provider in the mid-90s he quickly 
                   <!-- grid item -->
                   <div class="grid-item col-md-6">
                     <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-lock"></span>
+                      <span class="icon glyphicon glyphicon-star-empty"></span>
                       <div class="text-content">
-                        <h5>Integer ultricies sed ligula</h5>
-                        <p>Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula ligula eget.</p>
+                        <h5>Agility</h5>
+                        <p>
+This is a new era and and there are so many problems that have already been solved, and a world of quality open source products.  By keeping an open mind
+and your finger on the pulse of the latest technologies we can create increasingly powerful systems in less time and with less expense than ever before. 
+
+</p>
                       </div>
                     </div><!-- end: .item-content -->
                   </div><!-- end: .grid-item -->
@@ -145,10 +157,14 @@ Helping to start-up a small Internet Service Provider in the mid-90s he quickly 
                   <!-- grid item -->
                   <div class="grid-item col-md-6">
                     <div class="item-content clearfix">
-                      <span class="icon glyphicon glyphicon-file"></span>
+                      <span class="icon glyphicon glyphicon-cloud"></span>
                       <div class="text-content">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula eget tempus.</p>
+                        <h5>Cloud</h5>
+                        <p>
+Experience leveraging the power of the cloud.  I have managed the infrastructure of multiple production web and mobile solutions in Amazon Web Services,
+including quality assurance, deployment, auto-scaling, security and performance.  Together we can build the systems to inexpensively get you off the ground 
+while preparing for supporting the demands that success will bring.
+</p>
                       </div>
                     </div><!-- end: .item-content -->
                   </div><!-- end: .grid-item -->
@@ -226,10 +242,10 @@ Health Insurance Benefits and Enrollment
                     </a><!-- .thumbnail -->
 
                     <div class="content-to-populate-in-modal" id="modal-content-7">
-                      <img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
+                      <x-img data-img-src="assets/images/other_images/top-image2.jpg" class="lazy full-width" alt="Lorem Ipsum">
                       <h1>Benefits Enrollment</h1>
-                      <p>Worked for Great-West Health, later CIGNA, on two critical projects.  Under an extremely tight deadline completed a 
-benefits enrollment application used by hundreds of thousands of customers by the completion of enrollment season.  </p>
+                      <p>Worked for Great-West Health, later CIGNA, on two critical projects.  Under an extremely tight deadline we completed a 
+benefits enrollment application used by hundreds of thousands of customers.  </p>
                     </div><!-- #modal-content-7 -->
                   </article>
 
@@ -250,7 +266,7 @@ Customer facing sales site with millions of page views per day.
                     <div class="content-to-populate-in-modal" id="modal-content-8">
                       <img data-img-src="assets/images/other_images/gd1.png" class="lazy full-width" alt="Go Daddy Ajax">
                       <h1>Fast, Dynamic AJAX</h1>
-                      <p>Instrumental in designing and implementing the company's new AJAX, jQuery and JSON based framework to enable fast and dynamic loading of content on the company's main domain purchase site. The sight is extremely high traffic with millions of page views per day.
+                      <p>Instrumental in designing and implementing the company's AJAX, jQuery and JSON based framework to enable fast and dynamic loading of content on the company's main domain purchase site. The sight is extremely high traffic with millions of page views per day.
 </p>
                       <p>Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.</p>
                       <p>Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.</p>
@@ -273,9 +289,9 @@ Customer facing sales site with millions of page views per day.
               
                 <!-- CONTACT DETAILS -->
                 <div class="contact-details col-sm-5 col-md-3">
-                  <p>123A,<br/>Molestie Lorem Avenue,<br/>Aliquam<br/>AAA0010</p>
-                  <p>Tel: (+20) 21 301 524</p>
-                  <p><a href="mailto:info@loremipsum.com">info@loremipsum.com</a></p>
+                  <p>Lakewood, CO</p>
+                  <p>Tel: 720.530.1171</p>
+                  <p><a href="mailto:jon.lind@gmail.com">jon.lind@gmail.com</a></p>
                 </div>
                 <!-- END: CONTACT DETAILS -->
 
