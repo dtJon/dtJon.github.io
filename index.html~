@@ -82,7 +82,8 @@
 
                 <h1 class="section-title">Who I Am</h1>
 
-                <p class="feature-paragraph"><img data-img-src="assets/images/other_images/transp-image5b.png" class="lazy pull-right" alt="Jon Lind: Who I Am">
+                <p class="feature-paragraph">
+<!--<img data-img-src="assets/images/other_images/transp-image5b.png" class="lazy pull-right" alt="Jon Lind: Who I Am">-->
 
 <h4>Philosophy</h4>
 	<p>An innate desire to say "yes".  An almost obsession with performance and efficiency and trying to achieve maximum productivity.  </p>
@@ -291,11 +292,13 @@ Customer facing sales site with millions of page views per day.
                 <div class="contact-details col-sm-5 col-md-3">
                   <p>Lakewood, CO</p>
                   <p>Tel: 720.530.1171</p>
-                  <p><a href="mailto:jon.lind@gmail.com">jon.lind@gmail.com</a></p>
+<p><a href="mailto:jon.lind@gmail.com">jon.lind@gmail.com</a></p>
                 </div>
                 <!-- END: CONTACT DETAILS -->
 
                 <!-- CONTACT FORM -->
+<script>
+/*
                 <div class="col-sm-7 col-md-9">
                   <!-- IMPORTANT: change the email address at the top of the assets/php/mail.php file to the email address that you want this form to send to -->
                   <form class="form-style validate-form clearfix" action="assets/php/mail.php" method="POST" role="form">
@@ -327,7 +330,8 @@ Customer facing sales site with millions of page views per day.
 
                   </form>
                 </div><!-- end: CONTACT FORM -->
-
+*/
+</script>
           </div><!-- .content-wrapper -->
         </article><!-- .section-wrapper -->
 
